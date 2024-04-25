@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    
+    <form action="/submit-form-url" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required> 
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"placeholder="Ingrese su correo electrónico"  required>
+        </div>
+        <div class="form-group">
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+        </div>
+        <div class="form-group">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="">Seleccione un país</option>
+                <option value="ar">Argentina</option>
+                <option value="mx">Uruguay</option>
+                <option value="es">Chile</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto términos y condiciones</label>
+        </div>
+        <div class="form-group">
+            <button type="submit">Aceptar</button>
+        </div>
+    </form>
+    <footer>
+        <p>&copy; 2024 CAC-Music</p>
+    </footer>
+</body>
+</html>
