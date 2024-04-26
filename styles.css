@@ -4,6 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+header {
+    position: fixed;
+    top: 100;
+    right: 0;
+    padding: 50px;
+    background-color: #ffffff
+    box-shadow 0 2px 5px  rgba(0, 0, 0, 0.1); 
+
+}
+
+header img {
+    max-height: 200px; 
+}
+
 body{
     background-color: #93b8f0; opacity: 80%;
     background-image: url(imagenes/preview_music.jpeg);
@@ -108,8 +122,9 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130vh; 
+    height: 150vh; 
     float: inline-start;
+   
     
 }
 
